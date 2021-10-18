@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="x-ua-compatible" content="ie=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>GLI FORUM</title>
+	<link rel="icon" href="https://gliforumlatam.s3.us-west-2.amazonaws.com/img/favicon.png" type="image/x-icon" />
+	<link rel="shortcut icon" href="https://gliforumlatam.s3.us-west-2.amazonaws.com/img/favicon.png" type="image/x-icon" />
+
+	<link rel="stylesheet" href="https://gliforumlatam.s3.us-west-2.amazonaws.com/css/core.css?ver=0.1"/>
+	<link rel="stylesheet" href="https://gliforumlatam.s3.us-west-2.amazonaws.com/css/app.css"/>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+	<script src="https://kit.fontawesome.com/ba7daf7b1b.js" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.1.18/jquery.backstretch.min.js"></script>
+	<script src="https://gliforumlatam.s3.us-west-2.amazonaws.com/js/nav.js"></script>
+
+	<!-- Facebook OG Tags -->
+	<meta property="og:title" content="GLI FORUM" />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="628" />
+	<meta property="og:url" content="" />
+	<meta property="og:description" content="" />
+	<meta property="og:image:alt" content="">
+
+	<!-- Start of  Zendesk Widget script -->
+	<!--<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=3a40ac48-72cd-4e06-b0bb-e2a58e41679a"> </script>-->
+	<!-- End of  Zendesk Widget script -->
+
+	<!-- Analytics -->
+
+
+</head>
+<body>
+
+	{% block nav %}
+	    {% include 'partials/nav.twig' %}
+	{% endblock %}
+
+	<!--NO omitir la etiqueta de main-->
+	<main>
+		{% block content %}{% endblock %}
+		{% include 'partials/footer.twig' %}
+	</main>
+
+	{% include 'partials/lightbox.twig' %}
+	
+</body>
+</html>
